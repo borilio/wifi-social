@@ -1,0 +1,57 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="lateral.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Nombre aplicación</span>
+    <span class="espaciado"></span>
+    <!--Botones en la barra-->
+    <button mat-icon-button [matMenuTriggerFor]="lang">
+        <mat-icon>language</mat-icon>
+    </button>
+    <mat-menu #lang="matMenu">
+        <button mat-menu-item>
+            <button mat-mini-fab class="btn-idioma btn-idioma-es"></button>
+            <span class="ms-2">Español</span>
+        </button>
+        <button mat-menu-item>
+            <button mat-mini-fab class="btn-idioma btn-idioma-en"></button>
+            <span class="ms-2">English</span>
+        </button>
+        <button mat-menu-item>
+            <button mat-mini-fab class="btn-idioma btn-idioma-fr"></button>
+            <span class="ms-2">Français</span>
+        </button>
+    </mat-menu>
+    <button mat-icon-button>
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button>
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-drawer-container class="contenedor">
+    <!--Panel lateral-->
+    <mat-drawer #lateral mode="over" 
+        class="barra-lateral shadow">
+
+        <p>Aquí se ponen los enlaces</p>
+        <p>Contacto, etc</p>
+        <hr/>
+        <button mat-button>
+            <mat-icon>help</mat-icon>
+            <span>Ayuda</span>
+        </button>
+        <button mat-button [matMenuTriggerFor]="lang">
+            <mat-icon>language</mat-icon>
+            <span>Idioma</span>
+        </button>
+
+    </mat-drawer>
+
+    <!-- Contenido -->
+    <div class="barra-lateral-contenido">
+        <img src="/assets/img/logo.png" alt="Logo">
+    </div>
+
+</mat-drawer-container>
