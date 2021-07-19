@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Despliegue en Netlify
 
-Para ver la última versión de este proyecto, puede acceder a la [versión en Netlify](https://wifisocial.netlify.com/).
+Para ver la última versión de este proyecto, puede acceder a la [versión en Netlify](https://wifi-social.netlify.com/).
 
 
 ## Cambios
